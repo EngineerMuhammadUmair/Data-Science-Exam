@@ -1,0 +1,17 @@
+import math
+
+R=250
+L=0.65
+C=0.0000015
+pi=3.141
+f=60
+xl=0
+xc=0
+sub=0
+Z=0
+xl=(2*pi*f*L)
+xc=(1/(2*pi*f*C))
+sub=xl-xc
+Z=math.sqrt((R**2)+(sub**2))
+
+print("Total Circuit Impedence value is:",Z)
